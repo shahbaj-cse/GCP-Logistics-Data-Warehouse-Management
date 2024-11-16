@@ -11,11 +11,12 @@ Key functionalities include:
 The project leverages the scalability of **GCP** and **Dataproc** for big data processing and the simplicity of **Airflow** for orchestrating the ETL pipeline.
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Introduction](#gcp-logistics-data-warehouse-management)
 - [Architecture](#architecture)
 - [Dependencies/Requirements](#dependenciesrequirements)
 - [Tech Stack](#tech-stack)
 - [Implementation Process](#implementation-process)
+- [Resources](#resources)
 
 ## Architecture
 
@@ -95,3 +96,11 @@ The project leverages Apache Airflow for orchestrating the ETL pipeline in the f
    - Airflow handles the orchestration, monitoring, and execution of each task, from sensing the new files to archiving them post-processing.
 
 This automation ensures that as soon as new data is available in the GCS bucket, the Airflow DAG kicks off automatically, processes the data, and completes the ETL steps without requiring manual initiation.
+
+---
+
+## Resources
+
+- **Dataset**: Simulated real-world logistic data was used to emulate logistic data ingestion. Access the dataset here: [Logistic-Daily-Data](logistic_daily_data).  
+- **Airflow DAG**: The Airflow DAG Python script, used to create and manage the DAG in GCP Composer, is available here: [airflow-dag.py](airflow-dag.py).
+
